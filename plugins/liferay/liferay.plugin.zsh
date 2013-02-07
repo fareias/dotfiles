@@ -1,6 +1,8 @@
 export ANT_OPTS=-Xmx1024m
 export JAVA_HOME=/Library/Java/Home
 export M2_HOME=/usr/share/maven
+export PATH=~/bin/:$PATH
+export EDITOR='subl -w'
 
 alias aa='ant all'
 alias abm='ant build-modules'
@@ -32,6 +34,7 @@ alias lpi='cd $LIFERAY_PORTAL/portal-impl'
 alias lps='cd $LIFERAY_PORTAL/portal-service'
 alias lpw='cd $LIFERAY_PORTAL/portal-web'
 alias start-tomcat='./bin/catalina.sh run && tail -f ./logs/catalina.out'
+alias sdemo='cd /Users/Fareias/Bundles/6.1.EE.GA2_DEMO_2.0/tomcat-7.0.27 && start-tomcat'
 
 function bac {
 	cd $ALLOY_UI/src/aui-$1
